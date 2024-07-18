@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div>
+        <h1 style="color: rgb(97, 212, 155);">CALCULATOR</h1>
+    <div class="brdr" style="border: 3px solid lightcyan;">
+    <div>
+        <input class="line" type="text" name="text" id="display">
+    </div>
+    <br>
+    <div style="text-align: center; ">
+        <button class="bt" onclick="getvalue('1')">1</button>
+        <button class="bt" onclick="getvalue('2')">2</button>
+        <button class="bt" onclick="getvalue('3')">3</button>
+        <button style="background-color: rgb(244, 71, 71);" class="bt" onclick="getvalue('C')">C</button>
+    </div>
+    <div style="text-align: center;">
+        <button class="bt" onclick="getvalue('4')">4</button>
+        <button class="bt" onclick="getvalue('5')">5</button>
+        <button class="bt" onclick="getvalue('6')">6</button>
+        <button style="background-color: rgb(77, 162, 191);" class="bt" onclick="getvalue('+')">+</button>
+    </div>
+    <div style="text-align: center;">
+        <button class="bt" onclick="getvalue('7')">7</button>
+        <button class="bt" onclick="getvalue('8')">8</button>
+        <button class="bt" onclick="getvalue('9')">9</button>
+        <button style="background-color: rgb(142, 175, 75);" class="bt" onclick="getvalue('-')">-</button>
+    </div>
+    <div style="text-align: center;">
+        <button style="background-color: peachpuff;" class="bt" onclick="getvalue('*')">x</button>
+        <button class="bt" onclick="getvalue('0')">0</button>
+        <button style="background-color: rgb(136, 89, 136);" class="bt" onclick="getvalue('/')">/</button>
+        <button style="background-color: rgb(150, 128, 87);" class="bt" onclick="getvalue('=')">=</button>
+    </div>
+    </div>
+    </div>
+    <script>
+        function getvalue(a){
+            const display=document.getElementById("display");
+            if(a=="C")
+            display.value="";
+        else if(a=="=")
+        display.value=eval(display.value)
+        else
+        display.value +=a;
+        console.log(a)
+        }
+    </script>
+    
+</body>
+</html>

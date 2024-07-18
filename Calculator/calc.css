@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+    background-image: url(/images/rm373batch13-086.jpg);
+    
+    margin-top: 150px;
+}
+.brdr{
+    border-collapse: collapse;
+    border-radius: 90px;
+
+    padding: 20px;
+    margin: 490px;
+    margin-top: 20px;
+
+}
+.bt{
+    font-size: 40px;
+    width: 90px;
+    height: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+    margin: 10px; 
+    font-weight: bold;   
+}
+.line{
+    width: 430px;
+    height: 55px;
+    border-radius: 30px;   
+}
+.bt:hover{
+    background-color: yellow;
+    cursor: pointer; 
+}
+#display{
+    font-size: 50px;
+    font-weight: 200;
+    height: 80px;
+    background-color: lightcyan;
+}
